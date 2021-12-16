@@ -1,0 +1,157 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252728"
+    tools:context="com.mohatir.viper.gns.fragments.Genesis_Tab3">
+
+    <Switch
+        android:id="@+id/switch_wideview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"
+        android:switchPadding="5dp"
+        android:text="iPad View"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+    <Switch
+        android:id="@+id/switch_rainbowsky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"
+        android:switchPadding="5dp"
+        android:text="Rainbow Sky"
+        android:textColor="#fff"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/switch_blacksky"
+        app:layout_constraintTop_toBottomOf="@+id/switch_blacksky" />
+
+    <Switch
+        android:id="@+id/switch_blacksky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:padding="5dp"
+        android:switchPadding="5dp"
+        android:text="Black Sky"
+        android:textColor="#fff"
+        app:layout_constraintStart_toEndOf="@+id/switch_wideview"
+        app:layout_constraintTop_toTopOf="@+id/switch_wideview" />
+
+    <Switch
+        android:id="@+id/switch_blackbody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:padding="5dp"
+        android:switchPadding="5dp"
+        android:text="White Body"
+        android:textColor="#fff"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/switch_wideview"
+        app:layout_constraintTop_toTopOf="@+id/switch_wideview" />
+
+    <Switch
+        android:id="@+id/switch_removeFog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"
+        android:switchPadding="5dp"
+        android:text="No Fog"
+        android:textColor="#fff"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/switch_wideview"
+        app:layout_constraintTop_toBottomOf="@+id/switch_wideview" />
+
+    <Switch
+        android:id="@+id/switch_fastpara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"
+        android:switchPadding="5dp"
+        android:text="Fast Landing"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="@+id/switch_rainbowsky"
+        app:layout_constraintTop_toBottomOf="@+id/switch_rainbowsky" />
+
+    <Switch
+        android:id="@+id/switch_watercity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:padding="5dp"
+        android:switchPadding="5dp"
+        android:text="Water City"
+        android:textColor="#fff"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/switch_removeFog"
+        app:layout_constraintTop_toBottomOf="@+id/switch_fastpara" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Visual"
+        android:textColor="#88D7FB"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView74"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="19dp"
+        android:alpha="0.7"
+        android:background="@drawable/sticker_yellow"
+        android:padding="2dp"
+        android:text="ISLAND"
+        android:textColor="#fff"
+        android:textSize="7sp"
+        app:layout_constraintBottom_toBottomOf="@+id/switch_fastpara"
+        app:layout_constraintEnd_toEndOf="@+id/switch_fastpara" />
+
+    <TextView
+        android:id="@+id/textView75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="19dp"
+        android:alpha="0.7"
+        android:background="@drawable/sticker_yellow"
+        android:padding="2dp"
+        android:text="EVERY GAME"
+        android:textColor="#fff"
+        android:textSize="7sp"
+        app:layout_constraintBottom_toBottomOf="@+id/switch_wideview"
+        app:layout_constraintEnd_toEndOf="@+id/switch_wideview" />
+
+    <TextView
+        android:id="@+id/textView76"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="19dp"
+        android:alpha="0.7"
+        android:background="@drawable/sticker_yellow"
+        android:padding="2dp"
+        android:text="EVERY GAME"
+        android:textColor="#fff"
+        android:textSize="7sp"
+        app:layout_constraintBottom_toBottomOf="@+id/switch_blacksky"
+        app:layout_constraintEnd_toEndOf="@+id/switch_blacksky" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

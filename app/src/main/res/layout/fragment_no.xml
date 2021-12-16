@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1b2b42"
+    tools:context=".fragments.NoFragment">
+
+    <Button
+        android:id="@+id/button_enter"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/sticker_mellow"
+        android:backgroundTint="#48BFD4"
+        android:text="Login"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="@+id/editText_key"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/editText_key"
+        app:layout_constraintTop_toBottomOf="@+id/editText_key" />
+
+    <EditText
+        android:id="@+id/editText_key"
+        style="@android:style/Widget.DeviceDefault.Light.EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/sticker_cmpr"
+        android:backgroundTint="#111C2B"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="enter password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textColor="#43B2CA"
+        android:textColorHint="#3BFFC7"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chicken" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN SYSTEM"
+        android:textColor="#009688"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="174dp" />
+
+    <TextView
+        android:id="@+id/textView_status"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/infobg"
+        android:gravity="center"
+        android:paddingStart="50dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="connecting...."
+        android:textColor="#0FF618"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/editText_key"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="238dp"
+        android:layout_marginEnd="16dp"
+        android:background="#130C07"
+        android:text="if you are on android 11 do not clear app data to avoid key login issue"
+        android:textColor="#F6ECEC"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <CheckBox
+        android:id="@+id/vmmode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/sticker_cmpr"
+        android:buttonTint="#FFEB3B"
+        android:padding="4dp"
+        android:text="Virtual Mode"
+        android:textColor="#FFEB3B"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/vmosmode"
+        app:layout_constraintStart_toStartOf="@+id/vmosmode"
+        app:layout_constraintTop_toBottomOf="@+id/vmosmode" />
+
+    <CheckBox
+        android:id="@+id/vmosmode"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/sticker_cmpr"
+        android:backgroundTint="#3A6673"
+        android:buttonTint="#3BFFC7"
+        android:padding="4dp"
+        android:text="VMOS Mode"
+        android:textColor="#3BFFC7"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/button_enter"
+        app:layout_constraintStart_toStartOf="@+id/button_enter"
+        app:layout_constraintTop_toBottomOf="@+id/button_enter" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="17dp"
+        android:text="Autohost AntiCheat Technology"
+        android:textColor="#03A9F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/server_grp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/drawable_switch_track_green"
+        android:backgroundTint="#243857"
+        app:layout_constraintBottom_toTopOf="@+id/editText_key"
+        app:layout_constraintEnd_toEndOf="@+id/editText_key"
+        app:layout_constraintStart_toStartOf="@+id/editText_key">
+
+        <RadioButton
+            android:id="@+id/rd_global"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawable_switch_track_green"
+            android:backgroundTint="#111C2B"
+            android:buttonTint="#3BFFC7"
+            android:checked="true"
+            android:padding="8dp"
+            android:text="Global Server"
+            android:textColor="#3BFFC7" />
+
+        <RadioButton
+            android:id="@+id/rd_korea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/drawable_switch_track_green"
+            android:backgroundTint="#111C2B"
+            android:buttonTint="#3BFFC7"
+            android:padding="8dp"
+            android:text="Korean Server"
+            android:textColor="#3BFFC7" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

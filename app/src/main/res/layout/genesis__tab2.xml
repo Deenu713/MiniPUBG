@@ -1,0 +1,382 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252728"
+    tools:context="com.mohatir.viper.gns.fragments.Genesis_Tab2">
+
+    <CheckBox
+        android:id="@+id/checkBox_flashhandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:buttonTint="#F4709D"
+        android:checked="true"
+        android:text="Auto Disable in 15s"
+        android:textColor="#F16D9A"
+        android:textSize="11sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/switch_flash"
+        app:layout_constraintTop_toTopOf="@+id/switch_flash" />
+
+    <SeekBar
+        android:id="@+id/seekBar_recoil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView51"
+        app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+    <SeekBar
+        android:id="@+id/seekBar_headshot"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView51"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Switch
+        android:id="@+id/switch_lr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="5dp"
+        android:padding="3dp"
+        android:switchPadding="5dp"
+        android:text="No Recoil 7.62mm + High Damage + LV4 Armour"
+        android:textColor="#fff"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+    <Switch
+        android:id="@+id/switch_instashot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"
+        android:switchPadding="5dp"
+        android:text="Instant Shot"
+        android:textColor="#fff"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/switch_lr"
+        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+    <Switch
+        android:id="@+id/switch_aimbot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="-1dp"
+        android:padding="5dp"
+        android:switchPadding="5dp"
+        android:text="AimBot + AimLock"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar_headshot" />
+
+    <Switch
+        android:id="@+id/switch_aimhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"
+        android:switchPadding="5dp"
+        android:text="Aimbot Head"
+        android:textColor="#fff"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/switch_instashot"
+        app:layout_constraintTop_toBottomOf="@+id/switch_lr" />
+
+    <Switch
+        android:id="@+id/switch_magic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:switchPadding="5dp"
+        android:text="Magic Bullet + Headshot"
+        android:textColor="#fff"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/switch_aimbot"
+        app:layout_constraintTop_toBottomOf="@+id/switch_aimbot" />
+
+    <Switch
+        android:id="@+id/switch_nofoot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:switchPadding="5dp"
+        android:text="No Footsteps"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="@+id/switch_aimbot"
+        app:layout_constraintTop_toBottomOf="@+id/switch_magic" />
+
+    <Switch
+        android:id="@+id/switch_microspeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:switchPadding="5dp"
+        android:text="Micro Speed"
+        android:textColor="#fff"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/switch_aimbot"
+        app:layout_constraintTop_toBottomOf="@+id/switch_nofoot" />
+
+    <Switch
+        android:id="@+id/switch_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:switchPadding="5dp"
+        android:text="SIT Scope"
+        android:textColor="#fff"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+    <Switch
+        android:id="@+id/switch14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:padding="5dp"
+        android:switchPadding="5dp"
+        android:text="Gun up"
+        android:textColor="#fff"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/switch_instashot" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="GO BRUTAL"
+        android:textColor="#88D7FB"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Hacker vs Hacker"
+        android:textColor="#88D7FB"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_nofoot" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/tncbrutal"
+        android:textColor="#F41504"
+        android:textSize="10sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/switch_flash"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_flashhandler" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:alpha="0.7"
+        android:background="@drawable/sticker_yellow"
+        android:padding="2dp"
+        android:text="LOBBY ONCE"
+        android:textColor="#fff"
+        android:textSize="7sp"
+        app:layout_constraintStart_toEndOf="@+id/textView51"
+        app:layout_constraintTop_toTopOf="@+id/textView51" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:alpha="0.7"
+        android:background="@drawable/sticker_yellow"
+        android:padding="2dp"
+        android:text="LOBBY ONCE"
+        android:textColor="#fff"
+        android:textSize="7sp"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:alpha="0.7"
+        android:background="@drawable/sticker_red"
+        android:padding="2dp"
+        android:text="PICK GUN FIRST"
+        android:textColor="#fff"
+        android:textSize="7sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/textView67"
+        app:layout_constraintTop_toTopOf="@+id/textView67" />
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:alpha="0.7"
+        android:background="@drawable/sticker_yellow"
+        android:padding="2dp"
+        android:text="ACTIVATE EVERY GAME"
+        android:textColor="#fff"
+        android:textSize="7sp"
+        app:layout_constraintEnd_toStartOf="@+id/switch_aimbot"
+        app:layout_constraintTop_toTopOf="@+id/switch_aimbot" />
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:background="@drawable/sticker_yellow"
+        android:padding="2dp"
+        android:text="LOBBY ONCE"
+        android:textColor="#fff"
+        android:textSize="7sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/switch_magic"
+        app:layout_constraintEnd_toStartOf="@+id/switch_magic" />
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:alpha="0.7"
+        android:background="@drawable/sticker_yellow"
+        android:padding="2dp"
+        android:text="ACTIVATE EVERY GAME"
+        android:textColor="#fff"
+        android:textSize="7sp"
+        app:layout_constraintEnd_toStartOf="@+id/switch_nofoot"
+        app:layout_constraintTop_toTopOf="@+id/switch_nofoot" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:alpha="0.7"
+        android:background="@drawable/sticker_yellow"
+        android:padding="2dp"
+        android:text="ACTIVATE EVERY GAME"
+        android:textColor="#fff"
+        android:textSize="7sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/switch_microspeed"
+        app:layout_constraintTop_toBottomOf="@+id/switch_nofoot" />
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="19dp"
+        android:alpha="0.7"
+        android:background="@drawable/sticker_red"
+        android:padding="2dp"
+        android:text="RISK"
+        android:textColor="#fff"
+        android:textSize="7sp"
+        app:layout_constraintBottom_toBottomOf="@+id/switch_flash"
+        app:layout_constraintEnd_toEndOf="@+id/switch_flash" />
+
+    <TextView
+        android:id="@+id/textView73"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:text="Cheats take 10s to apply"
+        android:textColor="#03A9F4"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="13dp"
+        android:text="Reduce Recoil"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Enhance Headshot MB"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar_recoil" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="no recoil"
+        android:textColor="#FF5722"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar_recoil"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar_recoil" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="brutal hs + mb"
+        android:textColor="#FF5722"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar_headshot"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar_headshot" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:text="To use no recoil, apply less recoil in lobby \n then increase to no recoil in game."
+        android:textColor="#4BAE4F"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_flashhandler" />
+</androidx.constraintlayout.widget.ConstraintLayout>

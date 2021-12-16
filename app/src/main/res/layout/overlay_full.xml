@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.8"
+    android:background="@drawable/genesis_splash2">
+
+    <Switch
+        android:id="@+id/switch_zr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/sticker_yellow"
+        android:checked="false"
+        android:padding="10dp"
+        android:showText="true"
+        android:switchPadding="8dp"
+        android:text="Zero Recoil"
+        android:textColor="#D8673AB7"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:thumb="@drawable/selector_custom_switch"
+        android:track="@drawable/drawable_switch_custom_track"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch_nf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sticker_yellow"
+        android:padding="10dp"
+        android:showText="true"
+        android:switchPadding="8dp"
+        android:text="No Footsteps"
+        android:textColor="#D8673AB7"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:thumb="@drawable/selector_custom_switch"
+        android:track="@drawable/drawable_switch_custom_track"
+        app:layout_constraintEnd_toEndOf="@+id/switch_zr"
+        app:layout_constraintTop_toBottomOf="@+id/switch_zr" />
+
+    <Switch
+        android:id="@+id/switch_sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sticker_yellow"
+        android:padding="10dp"
+        android:showText="true"
+        android:switchPadding="8dp"
+        android:text="Speed Hack"
+        android:textColor="#D8673AB7"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:thumb="@drawable/selector_custom_switch"
+        android:track="@drawable/drawable_switch_custom_track"
+        app:layout_constraintEnd_toEndOf="@+id/switch_zr"
+        app:layout_constraintTop_toBottomOf="@+id/switch_nf" />
+
+    <Switch
+        android:id="@+id/switch_fp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sticker_yellow"
+        android:padding="10dp"
+        android:showText="true"
+        android:switchPadding="8dp"
+        android:text="Fast Parachute"
+        android:textColor="#D8673AB7"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:thumb="@drawable/selector_custom_switch"
+        android:track="@drawable/drawable_switch_custom_track"
+        app:layout_constraintEnd_toEndOf="@+id/switch_zr"
+        app:layout_constraintTop_toBottomOf="@+id/switch_sp" />
+
+    <Switch
+        android:id="@+id/switch_lhs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sticker_yellow"
+        android:padding="10dp"
+        android:showText="true"
+        android:switchPadding="8dp"
+        android:text="LHS Peek Scope"
+        android:textColor="#D8673AB7"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:thumb="@drawable/selector_custom_switch"
+        android:track="@drawable/drawable_switch_custom_track"
+        app:layout_constraintEnd_toEndOf="@+id/switch_zr"
+        app:layout_constraintTop_toBottomOf="@+id/switch_fp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="activate hacks after gun pick only"
+        android:textColor="#FFEB3B"
+        app:layout_constraintEnd_toEndOf="@+id/switch_lhs"
+        app:layout_constraintTop_toBottomOf="@+id/switch_lhs" />
+</androidx.constraintlayout.widget.ConstraintLayout>

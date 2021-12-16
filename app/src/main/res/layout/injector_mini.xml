@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:gravity="right|top"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_oc"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/chicken"
+            android:textColor="#106A11"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnmv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="@drawable/handrag" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1b2b42"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="17dp"
+            android:visibility="visible">
+
+            <Switch
+                android:id="@+id/switch_bypass32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Bypass Game First (Lobby)"
+                android:textColor="#88FF8D"
+                android:textSize="12sp" />
+
+            <Switch
+                android:id="@+id/switch_lr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Less Recoil (Lobby)"
+                android:textColor="#8CDAFD"
+                android:textSize="12sp" />
+
+            <Switch
+                android:id="@+id/switch_aimbot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aimbot (lobby)"
+                android:textColor="#8CDAFD"
+                android:textSize="12sp" />
+
+            <Switch
+                android:id="@+id/switch_instanthit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Instant Hit"
+                android:textColor="#8CDAFD"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <Switch
+                android:id="@+id/switch_mbc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Magic Bullet + Headshots (game)"
+                android:textColor="#FFEB3B"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <Switch
+                android:id="@+id/switch_mbc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Magic Bullet (game)"
+                android:textColor="#FFEB3B"
+                android:textSize="12sp" />
+
+            <Switch
+                android:id="@+id/switch_nofoot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Silent Footsteps (game)"
+                android:textColor="#FFEB3B"
+                android:textSize="12sp" />
+
+            <Switch
+                android:id="@+id/switch_antishakegun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Muzzle Shake (game)"
+                android:textColor="#FFEB3B"
+                android:visibility="visible" />
+
+            <Switch
+                android:id="@+id/switch_antennapro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Antenna Pro"
+                android:textColor="#FFEB3B"
+                android:visibility="gone" />
+
+            <Switch
+                android:id="@+id/switch_flash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Flash player"
+                android:textColor="#FF5722"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Game Tools"
+                android:textColor="#8596F4"
+                android:textSize="10sp" />
+
+            <Switch
+                android:id="@+id/switch_bypass10m"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bypass 10m (Island)"
+                android:textColor="#88FF8D" />
+
+            <Switch
+                android:id="@+id/fast_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fast Reconnect"
+                android:textColor="#E88CF8"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"></LinearLayout>
+</LinearLayout>

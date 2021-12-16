@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.9"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right|top"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_oc"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:alpha="0.7"
+            android:background="@drawable/chicken"
+            android:textColor="#106A11"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnmv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="@drawable/handrag" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/container"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/sticker_transparent2"
+        android:padding="15dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/sticker_transparent2"
+            android:orientation="vertical"
+            android:padding="3dp"
+            android:visibility="visible">
+
+            <Switch
+                android:id="@+id/switch_vmbypass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/sticker_green"
+                android:padding="8dp"
+                android:text="Bypass Virtual (PUBG Logo)"
+                android:textColor="#EDEFFB"
+                android:textSize="11sp"
+                android:thumb="@drawable/selector_custom_switch"
+                android:track="@drawable/drawable_switch_track_green"
+                android:visibility="gone" />
+
+            <Switch
+                android:id="@+id/switch_acbypass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/sticker_green"
+                android:checked="false"
+                android:padding="8dp"
+                android:text="Bypass Anticheat (Lobby)"
+                android:textColor="#EDEFFB"
+                android:textSize="11sp"
+                android:thumb="@drawable/selector_custom_switch"
+                android:track="@drawable/drawable_switch_track_green"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/lobby"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sticker_cmpr"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lobby Cheats"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/switch_lr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Recoil Control"
+                    android:textColor="#FBEDF7"
+                    android:textSize="12sp"
+                    android:thumb="@drawable/selector_custom_switch"
+                    android:track="@drawable/drawable_switch_track_orange" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ingame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/sticker_velvet"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Game Cheats"
+                    android:textColor="#EEE5FB"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="activate these hacks after picking gun only"
+                    android:textColor="#F5CCFA"
+                    android:textSize="9sp"
+                    android:visibility="visible" />
+
+                <Switch
+                    android:id="@+id/switch_mbc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Magic Bullet"
+                    android:textColor="#FBEDF7"
+                    android:textSize="12sp"
+                    android:thumb="@drawable/selector_custom_switch"
+                    android:track="@drawable/drawable_switch_custom_track" />
+
+                <Switch
+                    android:id="@+id/switch_uaz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Fly UAZ"
+                    android:textColor="#FBEDF7"
+                    android:textSize="12sp"
+                    android:thumb="@drawable/selector_custom_switch"
+                    android:track="@drawable/drawable_switch_custom_track" />
+
+                <Switch
+                    android:id="@+id/switch_nofoot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="No FootSteps"
+                    android:textColor="#FBEDF7"
+                    android:textSize="12sp"
+                    android:thumb="@drawable/selector_custom_switch"
+                    android:track="@drawable/drawable_switch_custom_track" />
+
+                <LinearLayout
+                    android:id="@+id/brutal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/sticker_mellow"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Brutal Cheats"
+                        android:textColor="#FF9800"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="using brutal cheats can lead to offline ban\nUse in hack account only"
+                        android:textColor="#FFEB3B"
+                        android:textSize="9sp" />
+
+                    <Switch
+                        android:id="@+id/switch_speed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Speed Hack"
+                        android:textColor="#FBEDF7"
+                        android:textSize="12sp"
+                        android:thumb="@drawable/selector_custom_switch"
+                        android:track="@drawable/drawable_switch_custom_track" />
+
+                    <Switch
+                        android:id="@+id/switch_hs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Headshots"
+                        android:textColor="#FBEDF7"
+                        android:textSize="12sp"
+                        android:thumb="@drawable/selector_custom_switch"
+                        android:track="@drawable/drawable_switch_custom_track"
+                        android:visibility="visible"
+                        tools:checked="false" />
+
+                    <Switch
+                        android:id="@+id/switch_fastland"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Fast Parachute"
+                        android:textColor="#FBEDF7"
+                        android:textSize="12sp"
+                        android:thumb="@drawable/selector_custom_switch"
+                        android:track="@drawable/drawable_switch_custom_track" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sp_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Increases Player , Bullets and Vehicles Speed. Use Dacia to travel whole map while saving player framedrops"
+                    android:textColor="#400447"
+                    android:textSize="9sp"
+                    android:visibility="gone" />
+
+                <Switch
+                    android:id="@+id/switch_aimbot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="AimBot 360"
+                    android:textColor="#FBEDF7"
+                    android:thumb="@drawable/selector_custom_switch"
+                    android:track="@drawable/drawable_switch_custom_track"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
